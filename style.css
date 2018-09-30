@@ -9,8 +9,6 @@ sans-serif;
     font-size: 16px;
 }
 
-
-
 header {
     display: flex;
     background-image: url("imgs/headerImg.jpeg");
@@ -58,3 +56,48 @@ nav > ul > li{
     text-transform: uppercase;
 }
 
+body {
+    display: grid;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+#services {
+    height: 100vh;
+
+    background-color: #ccc;
+}
+
+#pastWork {
+    height: 100vh;
+
+    background-color: #fff;
+}
+
+#testimonies {
+    height: 100vh;
+
+    background-color: #ccc;
+}
+
+#pricing {
+    height: 100vh;
+
+    background-color: #fff;
+}
+
+footer {
+    height: 40vh;
+
+    background-color: #ccc;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    align-items: center;
+    padding-top: 100px;
+    font-size: 3em;
+}

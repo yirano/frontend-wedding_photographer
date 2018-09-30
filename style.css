@@ -1,29 +1,60 @@
+/***
+font-family: 'Raleway',
+sans-serif;
+***/
+
 *, html, body {
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
 }
 
+
+
 header {
+    display: flex;
     background-image: url("/imgs/1.jpeg");
     background-position: center;
     background-size: cover;
-    position: relative;
     height: 100vh;
+    flex-wrap: wrap;
 
 }
 
-nav {
+header > h1 {
+    flex-grow: 1;
+    font-size: 1.4em;
+    color: #fff;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    font-family: 'Raleway',
+    sans-serif;
+    font-weight: 700;
 }
 
-nav > ul {
+header > h1 > span {
+    display: block;
+    padding-left: 6.2px;
+    font-weight: 400;
+
+}
+
+header > h1, nav {
+    padding: 30px 50px;
+}
+
+nav  {
+    align-self: stretch;
+    flex-grow: 1;
     text-align: right;
 }
 
 nav > ul > li{
     list-style: none;
     display: inline-block;
-    padding: 20px 25px;
-
+    padding: 0px 25px;
+    color: #fff;
+    letter-spacing: .8px;
+    text-transform: uppercase;
 }
 

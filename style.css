@@ -13,7 +13,7 @@ sans-serif;
 
 header {
     display: flex;
-    background-image: url("../imgs/1.jpeg");
+    background-image: url("imgs/1.jpeg");
     background-position: center;
     background-size: cover;
     height: 100vh;

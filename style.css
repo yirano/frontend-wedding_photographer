@@ -1,0 +1,29 @@
+*, html, body {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+header {
+    background-image: url("/imgs/1.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+
+}
+
+nav {
+}
+
+nav > ul {
+    text-align: right;
+}
+
+nav > ul > li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 25px;
+
+}
+

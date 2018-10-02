@@ -87,18 +87,23 @@ body {
     
 }
 
-#serviceOneHover {
+#serviceOne {
     background: url("imgs/engagement.jpeg") center;
+    background-size: 400%;
+    transition: background-size 300ms ease-out;
 }
 
 
 #serviceTwo {
     background: url("imgs/flowers.jpeg") center;
+    background-size: 200%;
+    transition: background-size 300ms ease-out;
 }
 
 #serviceThree {
     background: url("imgs/portrait.jpeg") center;
     background-size: 160%;
+    transition: background-size 300ms ease-out;
 }
 
 .serviceClass {
@@ -107,6 +112,17 @@ body {
     height: 360px;
 }
 
+#serviceOne:hover {
+    background-size: 500%;
+}
+
+#serviceTwo:hover {
+    background-size: 250%;
+}
+
+#serviceThree:hover {
+    background-size: 210%;
+}
 
 #pastWork {
     height: 100vh;

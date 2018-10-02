@@ -57,7 +57,6 @@ nav > ul > li{
 }
 
 body {
-    display: grid;
     overflow-x: hidden;
 }
 
@@ -67,9 +66,47 @@ body {
 
 #services {
     height: 100vh;
-
-    background-color: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 120px;
 }
+
+.serviceHover {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceHover span {
+    color: #fff;
+    font-size: 1.3em;
+    border: 2px solid#fff;
+    letter-spacing: 1px;
+    padding: 6px 15px;
+    
+}
+
+#serviceOneHover {
+    background: url("imgs/engagement.jpeg") center;
+}
+
+
+#serviceTwo {
+    background: url("imgs/flowers.jpeg") center;
+}
+
+#serviceThree {
+    background: url("imgs/portrait.jpeg") center;
+    background-size: 160%;
+}
+
+.serviceClass {
+    margin: 80px auto;
+    width: 360px;
+    height: 360px;
+}
+
 
 #pastWork {
     height: 100vh;

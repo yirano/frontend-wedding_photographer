@@ -3,6 +3,8 @@ font-family: 'Raleway',
 sans-serif;
 ***/
 
+@import url(http://weloveiconfonts.com/api/?family=typicons);
+
 *, html, body {
     margin: 0;
     box-sizing: border-box;

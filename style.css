@@ -70,6 +70,7 @@ header {
     padding: 30px 50px;
 }
 
+
 nav  {
     align-self: stretch;
     flex-grow: 1;
@@ -87,8 +88,11 @@ nav > ul > li{
 
 .scrolledHeader
 {
+    position: fixed;
     background-color: #000;
     height: 60px;
+    width: 100vw;
+    transition: 600ms;
 }
 
 .scrolledHeader > nav,
@@ -96,7 +100,7 @@ nav > ul > li{
 .scrolledHeader h1, 
 .scrolledHeader h1 > span
 {
-    font-size: .95rem;
+    font-size: 90%;
     padding: 10px;
     margin: 0 auto;
     text-align: center;
@@ -107,7 +111,7 @@ nav > ul > li{
 }
 
 .scrolledHeader > h1 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 
 body {

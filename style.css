@@ -34,16 +34,18 @@ h2 {
 }
 
 header {
-    display: flex;
     background-image: url("imgs/headerImg.jpeg");
     background-position: center;
     background-size: cover;
     height: 100vh;
-    flex-wrap: wrap;
-
 }
 
-header > h1 {
+.header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header > h1 {
     font-size: 1.4em;
     color: #fff;
     letter-spacing: 1.4px;
@@ -53,7 +55,7 @@ header > h1 {
     font-weight: 700;
 }
 
-header > h1 > span {
+.header > h1 > span {
     display: block;
     padding-left: 6.2px;
     color: #fff;
@@ -62,11 +64,9 @@ header > h1 > span {
     line-height: 19px;
     text-transform: lowercase;
     border-top: 1px dotted #fff;
-
-
 }
 
-header > h1, nav {
+.header > h1, nav {
     padding: 30px 50px;
 }
 
@@ -83,6 +83,31 @@ nav > ul > li{
     color: #fff;
     letter-spacing: .8px;
     text-transform: uppercase;
+}
+
+.scrolledHeader
+{
+    background-color: #000;
+    height: 60px;
+}
+
+.scrolledHeader > nav,
+.scrolledHeader li,
+.scrolledHeader h1, 
+.scrolledHeader h1 > span
+{
+    font-size: .95rem;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scrolledHeader h1 > span {
+    padding-top: 2px;
+}
+
+.scrolledHeader > h1 {
+    font-size: 1.2rem;
 }
 
 body {
@@ -156,8 +181,13 @@ body {
 }
 
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 65px;
+}
+
+.portfolio img {
+    width: 100%;
 }
 
 

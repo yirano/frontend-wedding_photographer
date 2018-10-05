@@ -32,13 +32,15 @@ header {
     background-position: center;
     background-size: cover;
     height: 100vh;
+
+    transition-delay: 500ms;
+
 }
 
 .header {
     display: flex;
     flex-wrap: wrap;
 
-    transition-delay: 100ms;
 }
 
 .header > h1 {
@@ -96,6 +98,9 @@ nav > ul > li{
     height: 60px;
     width: 100%;
     z-index: 999;
+
+    transition-delay: 150ms;
+
 
 }
 
@@ -194,8 +199,9 @@ body {
 
 .portfolio {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0 65px;
+    grid-gap: 15px 20px;
 }
 
 .portfolio img {

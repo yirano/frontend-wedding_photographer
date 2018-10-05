@@ -37,6 +37,8 @@ header {
 .header {
     display: flex;
     flex-wrap: wrap;
+
+    transition-delay: 100ms;
 }
 
 .header > h1 {
@@ -47,6 +49,10 @@ header {
     font-family: 'Raleway',
     sans-serif;
     font-weight: 700;
+    padding: 30px 50px;
+    text-align: center;
+
+
 }
 
 .header > h1 > span {
@@ -58,48 +64,63 @@ header {
     line-height: 9px;
     text-transform: lowercase;
     font-weight: 400;
+
+
 }
 
-.header > h1 {
-    padding: 30px 50px;
-}
 
 nav  {
     align-self: stretch;
     flex-grow: 1;
     text-align: right;
-    
-    transition: 600ms;
-    
+    padding-right: 40px;
+
 }
 
 nav > ul > li{
     display: inline-block;
     position: relative;
     top: 40px;
+    font-size: 14px;
     padding: 0px 25px;
     list-style: none;
     color: #fff;
     letter-spacing: .8px;
     text-transform: uppercase;
+
 }
 
 .scrolledHeader {
     position: fixed;
     background-color: #000;
     height: 60px;
-
     width: 100%;
     z-index: 999;
 
-    /* transition: 600ms; */
 }
 
 .scrolledHeader nav {
     position: relative;
     top: -20px;
+
+
 }
 
+.scrolledHeader h1 {
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.scrolledHeader > h1 > span {
+    letter-spacing: 2px;
+}
+
+
+.header>h1,
+.header>h1>span {
+    transition: 300ms;
+}
 
 body {
     overflow-x: hidden;

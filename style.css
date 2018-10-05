@@ -16,17 +16,11 @@ sans-serif;
 
 h1, h2 {
     font-weight: 600;
-}
-
-
-h1, h2 {
     text-transform: uppercase;
-
 }
 
 h1 {
     font-size: 2.6em;
-
 }
 
 h2 {
@@ -57,62 +51,55 @@ header {
 
 .header > h1 > span {
     display: block;
-    padding-left: 6.2px;
+    /* padding-left: 6.2px; */
     color: #fff;
     font-weight: 400;
     letter-spacing: 4px;
-    line-height: 19px;
+    line-height: 9px;
     text-transform: lowercase;
-    border-top: 1px dotted #fff;
+    font-weight: 400;
 }
 
-.header > h1, nav {
+.header > h1 {
     padding: 30px 50px;
 }
-
 
 nav  {
     align-self: stretch;
     flex-grow: 1;
     text-align: right;
+    
+    transition: 600ms;
+    
 }
 
 nav > ul > li{
-    list-style: none;
     display: inline-block;
+    position: relative;
+    top: 40px;
     padding: 0px 25px;
+    list-style: none;
     color: #fff;
     letter-spacing: .8px;
     text-transform: uppercase;
 }
 
-.scrolledHeader
-{
+.scrolledHeader {
     position: fixed;
     background-color: #000;
     height: 60px;
-    width: 100vw;
-    transition: 600ms;
+
+    width: 100%;
+    z-index: 999;
+
+    /* transition: 600ms; */
 }
 
-.scrolledHeader > nav,
-.scrolledHeader li,
-.scrolledHeader h1, 
-.scrolledHeader h1 > span
-{
-    font-size: 90%;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
+.scrolledHeader nav {
+    position: relative;
+    top: -20px;
 }
 
-.scrolledHeader h1 > span {
-    padding-top: 2px;
-}
-
-.scrolledHeader > h1 {
-    /* font-size: 1.2rem; */
-}
 
 body {
     overflow-x: hidden;

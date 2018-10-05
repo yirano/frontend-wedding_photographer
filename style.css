@@ -197,8 +197,7 @@ body {
     background-size: 210%;
 }
 
-.album {
-}
+
 
 .portfolio {
     display: grid;
@@ -206,6 +205,8 @@ body {
     padding: 0 65px;
     grid-gap: 15px 20px;
     padding-bottom: 40px;
+    position: relative;
+
 }
 
 .portfolio img {
@@ -219,7 +220,25 @@ body {
     grid-row: 2/4;
 }
 
+.album {
+    position: relative;
+}
 
+.hideText {
+    position: absolute;
+    top: 30%;
+    right: 0;
+
+    color: #fff;
+
+    border: 1px solid red;
+}
+
+.hideText h2,
+.hideText p {
+    color: #fff;
+
+}
 
 footer {
     height: 40vh;

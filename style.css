@@ -257,6 +257,13 @@ body {
     padding: 90px 280px;
 }
 
+.parallax {
+    background: url("imgs/wedding-17.jpeg") center;
+    height: 100vh;
+    background-size: cover;
+    position: static;
+}
+
 footer {
     height: 40vh;
 

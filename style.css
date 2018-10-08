@@ -16,6 +16,11 @@ sans-serif;
 
 .container {
     padding-bottom: 400px;
+    text-align: center;
+}
+
+.container > div {
+    padding: 35px;
 }
 
 h1, h2 {
@@ -108,15 +113,11 @@ nav > ul > li{
     z-index: 999;
 
     transition-delay: 150ms;
-
-
 }
 
 .scrolledHeader nav {
     position: relative;
     top: -20px;
-
-
 }
 
 .scrolledHeader h1 {
@@ -139,9 +140,6 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    text-align: center;
-}
 
 #services {
     display: flex;
@@ -252,16 +250,40 @@ body {
     z-index: -999;
 }
 
-.blog img {
-    width: 100vw;
-    padding: 90px 280px;
+.blog {
+    margin: 0 240px;
 }
+
+.blog img {
+    width: 100%;
+}
+
+.blog p {
+    padding: 40px 0;
+    font-size: .9em;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.blog p::first-letter {
+    font-size: 3em;
+    font-weight: 700;
+    float: left;
+    padding: 20px;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+
 
 .parallax {
     background: url("imgs/wedding-17.jpeg") center;
     height: 100vh;
     background-size: cover;
-    position: static;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
 }
 
 footer {

@@ -27,6 +27,9 @@ h2 {
     font-size: 1.2em;
 }
 
+p {
+    font-family: 'Raleway';
+}
 header {
     background-image: url("imgs/headerImg.jpeg");
     background-position: center;
@@ -229,15 +232,21 @@ body {
     top: 30%;
     right: 0;
 
-    color: #fff;
 
     border: 1px solid red;
 }
 
 .hideText h2,
 .hideText p {
-    color: #fff;
+    color: red;
 
+}
+
+
+
+.hideAlbum {
+    opacity: .3;
+    z-index: -999;
 }
 
 footer {
@@ -247,13 +256,10 @@ footer {
 }
 
 .title {
-    /* flex:  0 1 62%; */
     display: block;
     position: relative;
     width: 62%;
     padding-top: 50px;
-    /* align-items: center; */
-    /* justify-content: center; */
     margin: 0 auto;
 }
 

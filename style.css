@@ -19,12 +19,15 @@ q {
 }
 
 .container {
-    padding-bottom: 400px;
     text-align: center;
 }
 
 .container > div {
     padding: 45px;
+}
+
+.container:first-child {
+    padding-top: 200px;
 }
 
 h1, h2 {
@@ -149,11 +152,10 @@ body {
 #services {
     display: flex;
     flex-wrap: wrap;
-    padding: auto 75px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    
+    padding-top: 90px;
 }
 
 .serviceBox {
@@ -162,8 +164,9 @@ body {
     align-items: center;
     justify-content: center;
     margin: 15px;
-    height: 360px;
-    min-width: 360px;
+    margin-bottom: 0;
+    height: 370px;
+    min-width: 370px;
     flex: 1 1 1;
 
 }
@@ -210,17 +213,19 @@ body {
 
 .portfolio {
     display: grid;
+    position: relative;
+    width: 95%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 0 65px;
     grid-gap: 15px 20px;
     padding-bottom: 40px;
-    position: relative;
+    margin: 0 auto;
 
 }
 
 .portfolio img {
     width: 100%;
     height: 98%;
+    overflow: hidden;
 
 }
 

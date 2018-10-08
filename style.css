@@ -14,6 +14,10 @@ sans-serif;
     color: #3e454c;
 }
 
+.container {
+    padding-bottom: 400px;
+}
+
 h1, h2 {
     font-weight: 600;
     text-transform: uppercase;
@@ -30,6 +34,7 @@ h2 {
 p {
     font-family: 'Raleway';
 }
+
 header {
     background-image: url("imgs/headerImg.jpeg");
     background-position: center;

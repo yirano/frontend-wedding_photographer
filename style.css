@@ -247,11 +247,14 @@ body {
 
 }
 
-
-
 .hideAlbum {
     opacity: .3;
     z-index: -999;
+}
+
+.blog img {
+    width: 100vw;
+    padding: 90px 280px;
 }
 
 footer {

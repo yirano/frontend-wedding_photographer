@@ -14,22 +14,27 @@ sans-serif;
     color: #3e454c;
 }
 
+q {
+    font-style: italic;
+}
+
 .container {
     padding-bottom: 400px;
     text-align: center;
 }
 
 .container > div {
-    padding: 35px;
+    padding: 45px;
 }
 
 h1, h2 {
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: .1em;
 }
 
 h1 {
-    font-size: 2.6em;
+    font-size: 2.4em;
 }
 
 h2 {
@@ -144,7 +149,7 @@ body {
 #services {
     display: flex;
     flex-wrap: wrap;
-    padding: 75px;
+    padding: auto 75px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -159,7 +164,7 @@ body {
     margin: 15px;
     height: 360px;
     min-width: 360px;
-    flex: 1 1 360px;
+    flex: 1 1 1;
 
 }
 
@@ -202,8 +207,6 @@ body {
 #serviceThree:hover {
     background-size: 210%;
 }
-
-
 
 .portfolio {
     display: grid;
@@ -287,6 +290,29 @@ body {
 
 }
 
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.reviews {
+    flex: 1fr 1fr 1fr; 
+    width: 400px;
+    padding: 20px;
+    text-align: left;
+    
+}
+
+.reviews > q {
+    font-size: .9em;
+    line-height: 2em;
+}
+
 footer {
     height: 40vh;
 
@@ -296,8 +322,17 @@ footer {
 .title {
     display: block;
     position: relative;
-    width: 62%;
-    padding-top: 50px;
+    width: 100%;
     margin: 0 auto;
+    line-height: 3.3em;
+}
+
+.title > p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: .8em;
+    font-weight: 500;
+    letter-spacing: .1em;
+    line-height: 1.4em;
 }
 

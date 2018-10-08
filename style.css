@@ -264,6 +264,7 @@ body {
     line-height: 1.5em;
     font-weight: 500;
     text-align: justify;
+    column-count: 2;
 }
 
 .blog p::first-letter {

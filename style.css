@@ -394,7 +394,7 @@ div.packages {
 .packageImg img {
     width: 300px;
     height: 200px;
-    margin-bottom: 90px;
+    margin-bottom: 65px;
 }
 
 .packagePrice {
@@ -428,12 +428,52 @@ div.packages {
     text-transform: uppercase;
     font-size: .8em;
     color: #fff;
+    transition-duration: 300ms;
+    font-family: 'Playfair Display', serif;
+}
+
+.readMore:hover {
+    background-color: rgb(138, 101, 0);
+}
+
+table {
+    table-layout: fixed;
+    width: 30%;
+    border-collapse: collapse;
+    border: 2px solid  rgb(177, 130, 0);
+    border-right: none;
+    border-left: none;
+    margin: 86px auto 20px auto;
+    
+}
+
+
+th {
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    border-bottom: 2px solid  rgb(177, 130, 0);
+}
+
+td {
+    padding: 5px;
+    border-right: 2px solid  rgb(177, 130, 0);
+}
+
+td:nth-last-child(1) {
+    border: none;
+}
+
+.price {
+    font-weight: 600;
 }
 
 footer {
     height: 40vh;
     background-color: #ccc;
 }
+
 
 .title {
     display: block;

@@ -26,9 +26,6 @@ q {
     padding: 65px;
 }
 
-.container:first-child {
-    padding-top: 200px;
-}
 
 h1, h2 {
     font-weight: 600;
@@ -45,6 +42,10 @@ h2 {
 
 p {
     font-family: 'Raleway';
+}
+
+ul {
+    display: inline-block;
 }
 
 header {
@@ -256,7 +257,7 @@ body {
 }
 
 .blog {
-    margin: 0 240px;
+    margin: 0 30%;
 }
 
 .blog img {
@@ -270,6 +271,7 @@ body {
     font-weight: 500;
     text-align: justify;
     column-count: 2;
+    column-gap: 30px;
 }
 
 .blog p::first-letter {
@@ -301,22 +303,25 @@ body {
 }
 
 .testimonials {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-
-
 .reviews {
+    display: flex;
     flex: 1fr 1fr 1fr; 
-    width: 400px;
-    padding: 20px;
+    width: 60%;
+    padding: 55px;
     text-align: left;
-    
+    margin: 0 auto;
+
+}
+
+.reviews > div {
+    padding: 10px;
 }
 
 .reviews > q {
@@ -325,6 +330,7 @@ body {
 }
 
 .clientImg {
+    display: flex;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -360,6 +366,36 @@ body {
     /* float: left; */
 }
 
+.packages {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.packageImg {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.packageImg img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100%;
+}
+
+.packagePrice {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 80px;
+    justify-content: center;
+    text-align: center;
+    list-style: inside;
+}
+
 footer {
     height: 40vh;
 
@@ -369,17 +405,21 @@ footer {
 .title {
     display: block;
     position: relative;
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
     line-height: 3.3em;
 }
 
-.title > p {
+.title p {
     width: 60%;
     margin: 0 auto;
     font-size: .8em;
     font-weight: 500;
     letter-spacing: .1em;
     line-height: 1.4em;
+}
+
+.title > h1 {
+    letter-spacing: .1em;
 }
 

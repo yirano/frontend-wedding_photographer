@@ -469,11 +469,25 @@ td:nth-last-child(1) {
     font-weight: 600;
 }
 
-footer {
-    height: 40vh;
-    background-color: #ccc;
+.contact {
+    height: 440px;
+    background-color: #2c2727;
+
 }
 
+footer {
+    background-color: #000;
+    height: 100px;
+    width: 100%;
+}
+
+footer p {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    top: 40px;
+    text-align: center;
+}
 
 .title {
     display: block;

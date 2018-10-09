@@ -318,6 +318,41 @@ body {
     line-height: 2em;
 }
 
+.clientImg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.reviews img {
+    display: block;
+    width: 170%;
+    margin: 0px -40px;
+}
+
+.divider span {
+    /* padding: 10px 0; */
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 3px;
+    border-top: 1px solid #000;
+    top: -28px;
+    
+}
+
+.divider {
+    font-size: 3em;
+
+}
+
+.divider::after {
+    content: '';
+    margin-left: -30px;
+    /* float: left; */
+}
+
 footer {
     height: 40vh;
 

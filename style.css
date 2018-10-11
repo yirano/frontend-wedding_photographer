@@ -265,7 +265,8 @@ body {
 }
 
 .blog {
-    margin: 0 30%;
+    margin: 0 auto;
+    width: 70%;
 }
 
 .blog img {
@@ -284,7 +285,7 @@ body {
 
 .blog p::first-letter {
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 900;
     float: left;
     padding: 20px;
     padding-left: 0;
@@ -321,8 +322,8 @@ body {
 .reviews {
     display: flex;
     flex: 1fr 1fr 1fr; 
-    width: 60%;
-    padding: 55px;
+    width: 93%;
+    padding: 55px 0;
     text-align: left;
     margin: 0 auto;
 

@@ -5,7 +5,9 @@ sans-serif;
 
 @import url(http://weloveiconfonts.com/api/?family=typicons);
 
-*, html, body {
+*,
+html,
+body {
     margin: 0;
     box-sizing: border-box;
     color: #3e454c;
@@ -14,7 +16,7 @@ sans-serif;
 body {
     font-size: 16px;
     font-family: 'Raleway',
-    sans-serif;
+        sans-serif;
 }
 
 q {
@@ -25,18 +27,22 @@ q {
     text-align: center;
 }
 
-.container > div {
+.container>div {
     padding: 65px;
 }
 
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 600;
     font-family: 'Playfair Display',
-    serif;
+        serif;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-transform: uppercase;
 }
 
@@ -48,10 +54,11 @@ h2 {
     font-size: 1.2em;
 }
 
-ul, li {
+ul,
+li {
     margin: 0;
     padding: 0;
-    }
+}
 
 header {
     background-image: url("imgs/headerImg.jpeg");
@@ -68,13 +75,13 @@ header {
 
 }
 
-.header > h1 {
+.header>h1 {
     font-size: 1.4em;
     color: #fff;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     font-family: 'Playfair Display',
-    serif;
+        serif;
     font-weight: 700;
     padding: 30px 50px;
     text-align: center;
@@ -82,11 +89,11 @@ header {
 
 }
 
-.header > h1 > span {
+.header>h1>span {
     display: block;
     color: #fff;
     font-family: 'Raleway',
-    sans-serif;
+        sans-serif;
     font-weight: 400;
     letter-spacing: 4px;
     line-height: 9px;
@@ -96,17 +103,17 @@ header {
 
 }
 
-nav  {
+nav {
     font-family: 'Playfair Display',
-    serif;
+        serif;
     align-self: stretch;
     flex-grow: 1;
     text-align: right;
-    padding-right: 40px;
+    /* padding-right: 40px; */
 
 }
 
-nav > ul > li{
+nav>ul>li {
     display: inline-block;
     position: relative;
     top: 40px;
@@ -140,7 +147,7 @@ nav > ul > li{
     font-size: 1.2em;
 }
 
-.scrolledHeader > h1 > span {
+.scrolledHeader>h1>span {
     letter-spacing: 2px;
 }
 
@@ -223,19 +230,18 @@ body {
     width: 95%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px 20px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     margin: 0 auto;
 
 }
 
 .portfolio img {
     width: 100%;
-    height: 98%;
     overflow: hidden;
 
 }
 
-.mega{
+.mega {
     grid-column: 2/4;
     grid-row: 2/4;
 }
@@ -244,13 +250,15 @@ body {
     position: relative;
 }
 
-.hideText {
+.albumTitle {
+    display: block;
     position: absolute;
-    top: 30%;
-    right: 0;
+    width: 100%;
+    top: 40%;
+}
 
-
-    border: 1px solid red;
+.hideText {
+    display: none;
 }
 
 .hideText h2,
@@ -259,10 +267,6 @@ body {
 
 }
 
-.hideAlbum {
-    opacity: .3;
-    z-index: -999;
-}
 
 .blog {
     margin: 0 auto;
@@ -292,8 +296,6 @@ body {
     padding-top: 10px;
 }
 
-
-
 .parallaxOne {
     background: url("imgs/wedding-17.jpeg") center;
     height: 100vh;
@@ -321,7 +323,7 @@ body {
 
 .reviews {
     display: flex;
-    flex: 1fr 1fr 1fr; 
+    flex: 1fr 1fr 1fr;
     width: 93%;
     padding: 55px 0;
     text-align: left;
@@ -329,11 +331,11 @@ body {
 
 }
 
-.reviews > div {
+.reviews>div {
     padding: 10px;
 }
 
-.reviews > q {
+.reviews>q {
     font-size: .9em;
     line-height: 2em;
 }
@@ -361,7 +363,7 @@ body {
     margin-left: 3px;
     border-top: 1px solid #000;
     top: -28px;
-    
+
 }
 
 .divider {
@@ -375,7 +377,7 @@ body {
     /* float: left; */
 }
 
-div.packages {
+.packages {
     padding-top: 0;
     height: 100%;
 }
@@ -388,13 +390,13 @@ div.packages {
 
 }
 
-.packagePrice >div {
-    width: 400px;
+.packagePrice>div {
+    width: 33%;
 }
 
 .packageImg img {
-    width: 300px;
-    height: 200px;
+    width: 25%;
+    height: 25%;
     margin-bottom: 65px;
 }
 
@@ -406,7 +408,8 @@ div.packages {
     line-height: 2em;
 }
 
-.packagePrice ul li, .packagePrice p {
+.packagePrice ul li,
+.packagePrice p {
     list-style: inside;
     font-size: .9em;
 }
@@ -439,13 +442,12 @@ div.packages {
 
 table {
     table-layout: fixed;
-    width: 30%;
     border-collapse: collapse;
-    border: 2px solid  rgb(177, 130, 0);
+    border: 2px solid rgb(177, 130, 0);
     border-right: none;
     border-left: none;
     margin: 86px auto 20px auto;
-    
+
 }
 
 
@@ -454,12 +456,12 @@ th {
     font-family: 'Playfair Display', serif;
     font-size: 1.2em;
     letter-spacing: .1em;
-    border-bottom: 2px solid  rgb(177, 130, 0);
+    border-bottom: 2px solid rgb(177, 130, 0);
 }
 
 td {
     padding: 5px;
-    border-right: 2px solid  rgb(177, 130, 0);
+    border-right: 2px solid rgb(177, 130, 0);
 }
 
 td:nth-last-child(1) {
@@ -480,20 +482,18 @@ footer {
     background-color: #000;
     height: 100px;
     width: 100%;
+    text-align: center;
 }
 
 footer p {
     position: relative;
-    width: 1200px;
-    margin: 0 auto;
     top: 40px;
-    text-align: center;
 }
 
 .title {
     display: block;
     position: relative;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     line-height: 3.3em;
 }
@@ -507,7 +507,61 @@ footer p {
     line-height: 1.4em;
 }
 
-.title > h1 {
+.title>h1 {
     letter-spacing: .1em;
 }
 
+
+/************************************
+            RESPONSIVE
+************************************/
+
+@media only screen and (max-width: 1690px) {}
+
+@media only screen and (max-width: 1280px) {}
+
+@media only screen and (max-width: 980px) {
+    .container>div {
+        padding: 40px;
+    }
+
+    .burgerMenu {
+        display: none;
+    }
+
+    .serviceBox {
+        width: 100%;
+        height: 400px;
+    }
+
+    .portfolio {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px 15px;
+    }
+
+    .portfolio img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .mega {
+        display: none;
+    }
+
+    .blog {
+        width: 90%;
+        padding: 0;
+    }
+
+    .packageImg img {
+        width: 25%;
+        height: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 736px) {}
+
+@media only screen and (max-width: 480px) {}

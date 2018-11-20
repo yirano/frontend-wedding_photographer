@@ -525,8 +525,12 @@ footer p {
         padding: 40px;
     }
 
-    .burgerMenu {
+    /* .burgerMenu {
         display: none;
+    } */
+
+    nav > ul > li{
+        padding: 0 14px;
     }
 
     .serviceBox {
@@ -562,6 +566,45 @@ footer p {
 
 }
 
-@media only screen and (max-width: 736px) {}
+@media only screen and (max-width: 736px) {
+    .portfolio {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+        padding: 0;
+    }
 
-@media only screen and (max-width: 480px) {}
+    .burgerMenu {
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container > div {
+        padding: 40px 10px;
+    }
+    .title>h1 {
+        width: 100%;
+        font-size: 26px;
+        letter-spacing: 0px;
+        line-height: 1.2em;
+    }
+
+    .title>h2 {
+        line-height: 1.2em;
+    }
+
+    .title p {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .blog p {
+        column-count: 1;
+    }
+
+    .parallaxOne, .parallaxTwo {
+        display: none;
+    }
+}

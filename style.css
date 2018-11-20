@@ -604,6 +604,11 @@ footer p {
         column-count: 1;
     }
 
+    .packagePrice>div {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
     .parallaxOne, .parallaxTwo {
         display: none;
     }

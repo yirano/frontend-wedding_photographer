@@ -179,17 +179,20 @@ body {
     margin: 15px;
     margin-bottom: 0;
     height: 370px;
-    min-width: 370px;
     flex: 1 1 1;
 
 }
 
-.serviceLabel {
+.serviceLabel a {
     color: #fff;
     font-size: 1.3em;
     border: 2px solid #fff;
-    letter-spacing: 1px;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    font-weight: 600;
     padding: 6px 15px;
+    
+    
 }
 
 
@@ -212,11 +215,11 @@ body {
     transition: background-size 600ms ease-out;
 }
 
-#serviceOne:hover {
+#serviceOne:hover{
     background-size: 500%;
 }
 
-#serviceTwo:hover {
+#serviceTwo:hover{
     background-size: 250%;
 }
 
@@ -521,6 +524,8 @@ footer p {
 @media only screen and (max-width: 1280px) {}
 
 @media only screen and (max-width: 980px) {
+
+
     .container>div {
         padding: 40px;
     }
@@ -531,6 +536,14 @@ footer p {
 
     nav > ul > li{
         padding: 0 14px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    #services {
+        padding-top: 45px;
     }
 
     .serviceBox {
@@ -567,6 +580,7 @@ footer p {
 }
 
 @media only screen and (max-width: 736px) {
+
     .portfolio {
         display: grid;
         width: 100%;
@@ -575,14 +589,34 @@ footer p {
         padding: 0;
     }
 
+    .fullMenu {
+        display: none;
+    }
+
     .burgerMenu {
         width: 10%;
+
+    }
+
+    input[type="checkbox"] {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        border-top: 2px #fff solid;
+        width: 50px;
+        z-index: 9999;
     }
 }
 
 @media only screen and (max-width: 480px) {
+
     .container > div {
         padding: 40px 10px;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
     }
     .title>h1 {
         width: 100%;
@@ -600,6 +634,11 @@ footer p {
         font-size: 1em;
     }
 
+    .serviceBox {
+        width: 300px;
+        height: 300px;
+    }
+
     .blog p {
         column-count: 1;
     }
@@ -612,4 +651,10 @@ footer p {
     .parallaxOne, .parallaxTwo {
         display: none;
     }
+
+    .reviews {
+        display: block;  
+    }
+
+
 }

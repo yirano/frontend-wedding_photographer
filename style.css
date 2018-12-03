@@ -137,6 +137,14 @@ nav li {
     /* line-height: */
 }
 
+#burgerMenu {
+    display: none;
+}
+
+#menuCheck {
+    display: none;
+}
+
 .scrolledHeader {
     position: fixed;
     background-color: #000;
@@ -525,9 +533,7 @@ footer p {
     letter-spacing: .1em;
 }
 
-#burgerMenu {
-    display: none;
-}
+
 
 
 /************************************
@@ -551,6 +557,10 @@ footer p {
 
     #burgerMenu {
         display: hidden;
+    }
+
+    #menuCheck {
+        display: block;
     }
 
     nav > ul > li{

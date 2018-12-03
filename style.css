@@ -530,7 +530,7 @@ footer p {
         padding: 40px;
     }
 
-    /* .burgerMenu {
+    /* #burgerMenu {
         display: none;
     } */
 
@@ -593,19 +593,23 @@ footer p {
         display: none;
     }
 
-    .burgerMenu {
-        width: 10%;
+    #burgerMenu {
+        display: none;
+    }
 
+    #burgerMenu > li {
+        display: block;
     }
 
     input[type="checkbox"] {
+        display: block;
         position: fixed;
         top: 20px;
         right: 20px;
-        border-top: 2px #fff solid;
         width: 50px;
         z-index: 9999;
     }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -655,6 +659,5 @@ footer p {
     .reviews {
         display: block;  
     }
-
 
 }

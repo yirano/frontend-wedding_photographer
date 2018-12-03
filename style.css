@@ -111,6 +111,7 @@ nav {
     text-align: right;
     /* padding-right: 40px; */
 
+
 }
 
 nav>ul>li {
@@ -124,6 +125,16 @@ nav>ul>li {
     letter-spacing: .8px;
     text-transform: uppercase;
 
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    padding: 10px 10px;
+    text-align: center;
+    /* line-height: */
 }
 
 .scrolledHeader {
@@ -514,14 +525,22 @@ footer p {
     letter-spacing: .1em;
 }
 
+#burgerMenu {
+    display: none;
+}
+
 
 /************************************
             RESPONSIVE
 ************************************/
 
-@media only screen and (max-width: 1690px) {}
+@media only screen and (max-width: 1690px) {
 
-@media only screen and (max-width: 1280px) {}
+}
+
+@media only screen and (max-width: 1280px) {
+
+}
 
 @media only screen and (max-width: 980px) {
 
@@ -530,9 +549,9 @@ footer p {
         padding: 40px;
     }
 
-    /* #burgerMenu {
-        display: none;
-    } */
+    #burgerMenu {
+        display: hidden;
+    }
 
     nav > ul > li{
         padding: 0 14px;
@@ -595,6 +614,20 @@ footer p {
 
     #burgerMenu {
         display: none;
+    }
+
+    #burgerMenu{
+        position: absolute;
+        top: 0px;
+        right: 0;
+
+        background: #fff;
+        height: 40%;
+        width: 100%;
+    }
+
+    #burgerMenu ul {
+        height: 100%;
     }
 
     #burgerMenu > li {

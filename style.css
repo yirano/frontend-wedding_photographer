@@ -118,17 +118,18 @@ nav>ul>li {
     display: inline-block;
     position: relative;
     top: 40px;
-    font-size: 14px;
     padding: 0px 25px;
     list-style: none;
-    color: #fff;
-    letter-spacing: .8px;
-    text-transform: uppercase;
-
+    
 }
 
 nav a {
     text-decoration: none;
+    text-transform: lowercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1.4px;
 }
 
 nav li {
@@ -197,6 +198,7 @@ body {
     justify-content: center;
     margin: 15px;
     margin-bottom: 0;
+    min-width: 370px;
     height: 370px;
     flex: 1 1 1;
 
@@ -553,10 +555,6 @@ footer p {
 
     .container>div {
         padding: 40px;
-    }
-
-    nav > ul > li{
-        padding: 0 14px;
     }
 
     #services {

@@ -555,16 +555,12 @@ footer p {
         padding: 40px;
     }
 
-    #burgerMenu {
-        display: hidden;
-    }
-
-    #menuCheck {
-        display: block;
-    }
-
     nav > ul > li{
         padding: 0 14px;
+    }
+
+    #burgerMenu {
+        display: none;
     }
 
     input[type="checkbox"] {
@@ -623,13 +619,22 @@ footer p {
     }
 
     #burgerMenu {
-        display: none;
+        display: hidden;
+    }
+
+    #menuCheck {
+        display: hidden;
+    }
+
+    .menuContainer {
+        padding-top: 30px;
     }
 
     #burgerMenu{
-        position: absolute;
+        /* position: absolute; */
         top: 0px;
         right: 0;
+        padding-top: 20px;
 
         background: #fff;
         height: 40%;
@@ -650,6 +655,13 @@ footer p {
         top: 20px;
         right: 20px;
         width: 50px;
+        z-index: 9999;
+    }
+
+    label[for="menuCheck"] {
+        position: fixed;
+        top: 10px;
+        right: 10px;
         z-index: 9999;
     }
 

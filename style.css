@@ -560,8 +560,6 @@ footer p {
         padding: 40px;
     }
 
-
-
     #services {
         padding-top: 45px;
     }
@@ -586,6 +584,7 @@ footer p {
     .mega {
         display: none;
     }
+
 
     .blog {
         width: 90%;
@@ -651,6 +650,11 @@ footer p {
         top: 20px;
         right: 20px;
         color: #fff;
+    }
+
+
+    .testimonial {
+        margin: 60px 0;
     }
 
 }

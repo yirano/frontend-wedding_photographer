@@ -559,14 +559,6 @@ footer p {
         padding: 0 14px;
     }
 
-    #burgerMenu {
-        display: none;
-    }
-
-    input[type="checkbox"] {
-        display: none;
-    }
-
     #services {
         padding-top: 45px;
     }
@@ -612,57 +604,6 @@ footer p {
         grid-template-columns: 100%;
         grid-gap: 10px;
         padding: 0;
-    }
-
-    .fullMenu {
-        display: none;
-    }
-
-    #burgerMenu {
-        display: hidden;
-    }
-
-    #menuCheck {
-        display: hidden;
-    }
-
-    .menuContainer {
-        padding-top: 30px;
-    }
-
-    #burgerMenu{
-        /* position: absolute; */
-        top: 0px;
-        right: 0;
-        padding-top: 20px;
-
-        background: #fff;
-        height: 40%;
-        width: 100%;
-    }
-
-    #burgerMenu ul {
-        height: 100%;
-    }
-
-    #burgerMenu > li {
-        display: block;
-    }
-
-    input[type="checkbox"] {
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        width: 50px;
-        z-index: 9999;
-    }
-
-    label[for="menuCheck"] {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 9999;
     }
 
 }

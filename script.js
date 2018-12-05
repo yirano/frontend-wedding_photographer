@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', function(event){
 
     const engagement = document.getElementById("serviceOne");
     const serviceBox = document.getElementsByClassName("serviceBox");
-    const menuCheck = document.getElementById("menuCheck");
-    const burgerMenu = document.getElementById('burgerMenu');
 
     console.log("loaded");
 
@@ -30,16 +28,6 @@ document.addEventListener('DOMContentLoaded', function(event){
     }
 
 
-    menuCheck.addEventListener('change', function(event){
-
-        if(menuCheck.checked) {
-            burgerMenu.style.display = 'block';
-            console.log('checked');
-        } else {
-            burgerMenu.style.display = 'none';
-            console.log('unchecked');
-        }
-    });
         
 
 });

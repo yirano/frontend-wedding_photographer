@@ -85,8 +85,6 @@ header {
     font-weight: 700;
     padding: 30px 50px;
     text-align: center;
-
-
 }
 
 .header>h1>span {
@@ -99,8 +97,6 @@ header {
     line-height: 9px;
     text-transform: lowercase;
     font-weight: 400;
-
-
 }
 
 nav {
@@ -109,12 +105,9 @@ nav {
     align-self: stretch;
     flex-grow: 1;
     text-align: right;
-    /* padding-right: 40px; */
-
-
 }
 
-nav>ul>li {
+.fullMenu ul li{
     display: inline-block;
     position: relative;
     top: 40px;
@@ -133,16 +126,13 @@ nav a {
 }
 
 nav li {
+    list-style-type: none;
     padding: 10px 10px;
     text-align: center;
     /* line-height: */
 }
 
-#burgerMenu {
-    display: none;
-}
-
-#menuCheck {
+#collMenu {
     display: none;
 }
 
@@ -557,6 +547,8 @@ footer p {
         padding: 40px;
     }
 
+
+
     #services {
         padding-top: 45px;
     }
@@ -602,6 +594,50 @@ footer p {
         grid-template-columns: 100%;
         grid-gap: 10px;
         padding: 0;
+    }
+
+    .header h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .fullMenu {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .scrolledHeader nav {
+        top: 0px;
+        background-color: #000;
+    }
+
+    #toggleMenu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+    }
+
+    /* hide after you style */
+
+    #collMenu {
+        display: none;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        /* background-color: #000; */
+        background-color: inherit;
+    }
+
+    label[for='toggleMenu'] {
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 20px;
+        color: #fff;
     }
 
 }
